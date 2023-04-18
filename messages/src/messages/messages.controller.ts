@@ -5,13 +5,13 @@ import { MessagesService } from './messages.service';
 @Controller('messages')
 export class MessagesController {
 
-    messagesService: MessagesService;
+    //messagesService: MessagesService;
 
-    constructor(){
+    constructor(public messagesService : MessagesService){
         // Service is creating ist own dependencies
         //DONT DO THIS ON REAL APP
         //USE DEPENDENCY INJECTION
-        this.messagesService = new MessagesService();
+        //this.messagesService = new MessagesService();
     }
 
 
